@@ -1,0 +1,22 @@
+@import "../../styles/theme/color";
+.content-cnpj-query{
+
+    .text-color{
+        line-height: 46px;
+        color: var(--white)
+    }
+
+    .bg-color-text{
+        background-color: var(--white);
+        color: var(--green-300);
+        padding: 5px;
+    }
+
+    .button{
+        &:disabled{
+            opacity: 0.5;
+            color: var(--white);
+            cursor: not-allowed
+        }
+    }
+}

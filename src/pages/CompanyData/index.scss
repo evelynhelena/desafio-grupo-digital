@@ -1,0 +1,14 @@
+@import "../../styles/theme/color";
+
+.content-company-data{
+    .card-company-data{
+        border: 1px solid var(--gray-200);
+        border-radius: 5px;
+        .header{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            color: var(--white);
+            font-weight: bold;
+        }
+    }
+}
