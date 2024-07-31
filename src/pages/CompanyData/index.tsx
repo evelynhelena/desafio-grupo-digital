@@ -4,6 +4,7 @@ import { Box, Button, Flex, Text } from '@radix-ui/themes'
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+import { ModalEdit } from '../../components/ModalEdit'
 import { useCnpjQuery } from '../../hooks/useCnpjQuery'
 
 export function CompanyData() {
@@ -81,9 +82,13 @@ export function CompanyData() {
           </Box>
 
           <Flex justify="end" mb="8">
-            <Box asChild width="196px" className="cursor-pointer">
-              <Button className="bg-color">Alterar dados </Button>
-            </Box>
+            <ModalEdit
+              buttonAction={
+                <Box asChild width="196px" className="cursor-pointer">
+                  <Button className="bg-color">Alterar dados </Button>
+                </Box>
+              }
+            />
           </Flex>
         </Flex>
 
