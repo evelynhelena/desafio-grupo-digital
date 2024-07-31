@@ -26,7 +26,6 @@ export function CnpjQuery() {
     try {
       setLoader(true)
       const data = await cnpjService.getCnpjData(replaceInput(cnpj))
-      console.log(cnpj)
       setCompanyData(data)
       navigate('/company-data')
     } catch {
