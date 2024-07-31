@@ -19,7 +19,7 @@ export function App() {
             <Route path="/company-data" element={<CompanyData />} />
           </Routes>
         </BrowserRouter>
-        <Toaster richColors closeButton position="top-right" />
+        <Toaster richColors closeButton position="bottom-right" />
       </Theme>
     </CnpjQueryProvider>
   )

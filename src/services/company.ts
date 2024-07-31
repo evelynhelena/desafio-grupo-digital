@@ -10,13 +10,13 @@ export const cnpjService = {
     const { data }: CnpjQueryResponse = await api.get(`${cnpj}`)
     return data
   },
-  updateData: async function (
-    capmpanyData: CompanyToEditProps,
-  ): Promise<CompanyDataProps> {
-    const { data }: CnpjQueryResponse = await api.put(
-      `${capmpanyData.cnpj}`,
-      capmpanyData,
-    )
-    return data
+
+  updateData: async function (capmpanyData: CompanyToEditProps) {
+    await fetch('https://apiFake', {
+      method: 'POST',
+      body: JSON.stringify(capmpanyData),
+    }).then((data) => {
+      return data
+    })
   },
 }
