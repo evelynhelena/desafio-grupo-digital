@@ -35,7 +35,10 @@ export function ModalEdit({ buttonAction, handleEditData }: ModalEditProps) {
     companyData?.cnae_fiscal_descricao || '',
   )
 
-  const [endereco, setEndereco] = useState<string>(companyData?.bairro || '')
+  const [endereco, setEndereco] = useState<string>(
+    `${companyData?.logradouro}, ${companyData?.bairro} - 
+    ${companyData?.municipio}, ${companyData?.cep} - ${companyData?.uf}` || '',
+  )
 
   const handleEdit = () => {
     const data: CompanyToEditProps = {
