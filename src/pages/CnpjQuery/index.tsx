@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import { toast } from 'sonner'
 
 import { useCnpjQuery } from '../../hooks/useCnpjQuery'
-import { cnpjService } from '../../services/product'
+import { cnpjService } from '../../services/company'
 import { handleChange } from '../../utils/cnpjMask'
 
 export function CnpjQuery() {

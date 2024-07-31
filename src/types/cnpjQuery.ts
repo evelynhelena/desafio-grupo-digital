@@ -1,4 +1,4 @@
-interface SociosProps {
+export interface SociosProps {
   pais: string
   nome_socio: string
   codigo_pais: number
@@ -27,6 +27,17 @@ export interface CompanyDataProps {
   email: string
   qsa: SociosProps[]
   cnpj: string
+}
+
+export interface CompanyToEditProps {
+  razaoSocial: string
+  nomeFantasia: string
+  cnpj: string
+  situacao: string
+  dataAbertura: string
+  email: string
+  ramo: string
+  endereco: string
 }
 
 export interface CnpjQueryResponse {
